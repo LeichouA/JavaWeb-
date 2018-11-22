@@ -1,0 +1,18 @@
+package com.zhoulei.dao;
+
+import java.util.List;
+
+import com.zhoulei.pojo.User;
+
+public interface UserDao {
+
+	User checkUserLoginDao(String uname,String pwd);
+
+	int checkUserLoginDao(String newPwd, int uid);
+
+	List<User> userShowDao();
+
+	int userRegDao(User u);
+
+
+}
